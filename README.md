@@ -24,6 +24,28 @@ java Pixelate.java photo.jpg 20 M
 
 When it finishes, `result.jpg` is saved in the current folder. Close the window to exit.
 
+## Platforms
+
+Same command on every system (needs Java 11+).
+
+Mac / Linux:
+
+```
+java Pixelate.java photo.jpg 20 M
+```
+
+Windows (Command Prompt or PowerShell):
+
+```
+java Pixelate.java photo.jpg 20 M
+```
+
+Windows with a full path (use quotes if it has spaces):
+
+```
+java Pixelate.java "C:\Users\me\My Photos\photo.jpg" 20 M
+```
+
 ## Large image test
 
 Tested with a 5000x3333 JPG and a square size of 20 on a 12-core machine. The saved `result.jpg` kept the full 5000x3333 size.
