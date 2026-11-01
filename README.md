@@ -23,3 +23,14 @@ java Pixelate.java photo.jpg 20 M
 ```
 
 When it finishes, `result.jpg` is saved in the current folder. Close the window to exit.
+
+## Large image test
+
+Tested with a 5000x3333 JPG and a square size of 20 on a 12-core machine. The saved `result.jpg` kept the full 5000x3333 size.
+
+| Mode | Total time |
+|------|------------|
+| S    | 5.3 s      |
+| M    | 3.7 s      |
+
+The times include Java startup, loading and saving the image, so the speedup from the threads alone is larger than the table suggests.
